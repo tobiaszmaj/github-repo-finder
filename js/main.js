@@ -1,6 +1,7 @@
-// Init GitHub
+// Init GitHub & UI
 
 const gitRepo = new Github();
+const ui = new Ui();
 
 // Search Repo
 
@@ -13,9 +14,12 @@ searchRepo.addEventListener('keyup', e => {
 
     if (userText !== '') {
 
-        gitRepo.getRepo(userText);
+        gitRepo.getRepo(userText).then(data => {
+            ui.showRepo(data.repo);
+        })
 
     } else {
 
+        ui.clearProfile();
     }
 })

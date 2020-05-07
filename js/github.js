@@ -9,6 +9,11 @@ class Github {
     async getRepo(userText) {
         const repoResponse = await fetch(`https://api.github.com/search/repositories?q=${userText}&client_id=${this.client_id}&client_secret=${this.client_secret}&per_page=${this.repo_count}`);
 
-        console.log(repoResponse);
+        const repo = await repoResponse.json();
+
+        return {
+
+            repo: repo.items
+        }
     }
 }
