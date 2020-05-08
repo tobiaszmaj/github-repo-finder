@@ -3,7 +3,7 @@ class Github {
     constructor() {
         this.client_id = '9b19cd2337d5a24e434d';
         this.client_secret = 'acea0820bda1a5ba5c8fbb27bd164306dc3b9c55';
-        this.repo_count = 4;
+        this.repo_count = 5;
     }
 
     async getRepo(userText) {

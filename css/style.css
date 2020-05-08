@@ -73,12 +73,16 @@ input {
     height: 7vh;
     margin-left: 2vw;
     font-size: 3vh;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid darkturquoise;
 }
 
 /* Display repo styles */
 #displayRepo {
-    width: 70vw;
+    width: 75vw;
     padding-right: 2vw;
+    margin-bottom: 20vh;
 }
 
 .display-repo ul {
@@ -99,7 +103,7 @@ input {
 }
 
 .row1 img {
-    width: 75px;
+    max-width: 5vw;
     border-radius: 50%;
     margin-right: 2vw;
 }
@@ -113,6 +117,10 @@ input {
     color: darkturquoise
 }
 
+.row1 .title {
+    font-size: 18px;
+}
+
 .row2 {
     font-size: 14px;
     display: flex;
@@ -121,6 +129,7 @@ input {
 
 .row2 .language {
     margin-right: 2vw;
+    color: darkorange;
 }
 
 /* Footer styles */
@@ -134,5 +143,33 @@ footer {
 }
 
 footer p {
-    color: orange;
+    color: darkorange;
+}
+
+/* ---------- MOBILE VERSION ---------- */
+@media screen and (max-width: 767.98px) {
+
+    .form-section h1 {
+        font-size: 1.5rem;
+    }
+
+    #displayRepo {
+        width: 90vw;
+    }
+
+    .display-repo ul {
+        margin-left: -2vw;
+    }
+
+    .row1 {
+        font-size: 14px;
+    }
+
+    .row1 img {
+        display: none;
+    }
+
+    .row2 {
+        justify-content: space-between;
+    }
 }
