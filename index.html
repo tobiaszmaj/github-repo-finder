@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>GitHub Repo Finder</title>
 </head>
@@ -14,26 +16,19 @@
     <header>
         <nav class="nav">
             <div class="nav__wrapper container">
-                <a href="#" class="nav__logo">GitHub Repo</a>
+                <i class="fa fa-github fa-3x"></i>
+                <p>GitHub Repo Finder</p>
             </div>
         </nav>
     </header>
 
-    <section class="section">
-        <div class="container">
-            <h1 class="section__header">Search GitHub Repository</h1>
-            <div class="row">
-                <form class="form">
-                    <div class="row">
-                        <div class="form__input-field">
-                            <i class="fa fa-search"></i>
-                            <input type="text" id="repo-input" class="searchGithub">
-                            <label for="repo-input"></label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <section class="form-section">
+        <h1>Search GitHub Repository</h1>
+        <form>
+            <i class="fa fa-search fa-2x"></i>
+            <input type="text" id="repo-input" class="searchGithub" placeholder="Find Repo...">
+            <label for="repo-input"></label>
+        </form>
     </section>
 
     <!--Display results-->
@@ -41,12 +36,8 @@
 
     </section>
 
-    <footer class="footer">
-        <div class="footer__copyright">
-            <div class="container">
-                <p>Made by <a href="https://github.com/tobiaszmaj">Tobiasz Maj</a></p>
-            </div>
-        </div>
+    <footer>
+        <p>Made by <a href="https://github.com/tobiaszmaj">Tobiasz Maj</a></p>
     </footer>
 
     <script src="js/github.js"></script>
