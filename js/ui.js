@@ -10,14 +10,18 @@ class Ui {
 
         repo.forEach(function (repo) {
             output += `
-            <div class="container">
-                <ul class="collection">
-                    <li class="collection__item">
-                        <img src="${repo.owner.avatar_url}" alt="">
-                        <a href="${repo.html_url}" target="_blank"><span class="title">${repo.name}</span></a>
-                        <p>${repo.description}</p>
-                        <a href="#!" class="secondary-content"><i class="fa fa-star"></i>${repo.stargazers_count}</a>
-                        <div class="row">
+            <div class="display-repo">
+                <ul>
+                    <li>
+                        <div class="row1">
+                            <img src="${repo.owner.avatar_url}" alt="">
+                            <div class="description">
+                                <a href="${repo.html_url}" target="_blank"><span class="title">${repo.name}</span></a>
+                                <p>${repo.description}</p>
+                            </div>
+                            <p class="star"><i class="fa fa-star"></i>${repo.stargazers_count}</p>
+                        </div>
+                        <div class="row2">
                             <div>
                                 <span class="language">${repo.language}</span>
                             </div>

@@ -15,6 +15,9 @@ body {
     font-size: (14px * 1.3);
     letter-spacing: 0.5px;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a,
@@ -31,7 +34,7 @@ header {
     color: #fff;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .nav__wrapper {
@@ -72,12 +75,60 @@ input {
     font-size: 3vh;
 }
 
+/* Display repo styles */
+#displayRepo {
+    width: 70vw;
+    padding-right: 2vw;
+}
+
+.display-repo ul {
+    width: 100%;
+}
+
+.display-repo li {
+    margin-left: 0;
+    list-style-type: none;
+    padding: 3vh 0 3vh 0;
+    border-bottom: 1px solid #444;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.row1 img {
+    width: 75px;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+
+.row1 .description {
+    width: 80%;
+}
+
+.row1 .title,
+.row1 .star {
+    color: darkturquoise
+}
+
+.row2 {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row2 .language {
+    margin-right: 2vw;
+}
+
 /* Footer styles */
 footer {
     background: #333;
-    position: fixed;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: center;
 }
