@@ -37,13 +37,13 @@ header {
     width: 100%;
 }
 
-.nav__wrapper {
+.header__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav__wrapper p {
+.header__wrapper p {
     text-transform: uppercase;
     margin-left: 2vw;
     font-size: 20px;
